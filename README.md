@@ -1,5 +1,8 @@
 To build:
-    docker image build -t ice-opencds .
+  using remote distribution:
+    docker image build -f Dockerfile -t ice-opencds .
+  using locally downloaded opencds-ice.tar.gz:
+    docker image build -f Dockerfile.local -t ice-opencds .
 
 To run in background:
     docker run -d -p <random localhost port>:8080 ice-opencds
